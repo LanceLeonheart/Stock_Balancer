@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <script src="script.js" type="text/javascript"></script>
+        <style>
+            td{
+                border: 1px solid black;
+            }
+            table{
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="currentPortfolio">
+            <tr><td colspan="2">Current Portfolio</td></tr>
+            <tr>
+                <td>Symbol</td>
+                <td># of Shares</td>
+            </tr>
+            <tr>
+                <td>AAPL</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>GOOG</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>CYBR</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>ABB</td>
+                <td>900</td>
+            </tr>
+        </table>
+        <table id="targetPortfolio">
+            <tr><td colspan="2">Target Portfolio</td></tr>
+            <tr>
+                <td>Symbol</td>
+                <td># of Shares</td>
+            </tr>
+            <tr>
+                <td>AAPL</td>
+                <td>22%</td>
+            </tr>
+            <tr>
+                <td>GOOG</td>
+                <td>38%</td>
+            </tr>
+            <tr>
+                <td>GFN</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>ACAD</td>
+                <td>15%</td>
+            </tr>
+        </table>
+        <table id="resultTable">
+            <tr><td colspan="7">Results Table</td></tr>
+            <tr>
+                <td>Symbol</td>
+                <td># of Shares</td>
+                <td>Price of Shares</td>
+                <td># of Shares Sold</td>
+                <td># of Shares Bought</td>
+                <td>% of Portfolio</td>
+                <td>Total $</td>
+            </tr>
+            <tr>
+                <td>AAPL</td>
+                <td id="AAPL-StockFinal">0</td>
+                <td id="AAPL-Price">0</td>
+                <td id="AAPL-Sold">0</td>
+                <td id="AAPL-Bought">0</td>
+                <td id="AAPL-Percent">0</td>
+                <td id="AAPL-Total">0</td>
+            </tr>
+            <tr>
+                <td>GOOG</td>
+                <td id="GOOG-StockFinal">0</td>
+                <td id="GOOG-Price">0</td>
+                <td id="GOOG-Sold">0</td>
+                <td id="GOOG-Bought">0</td>
+                <td id="GOOG-Percent">0</td>
+                <td id="GOOG-Total">0</td>
+            </tr>
+            <tr>
+                <td>CYBR</td>
+                <td id="CYBR-StockFinal">0</td>
+                <td id="CYBR-Price">0</td>
+                <td id="CYBR-Sold">0</td>
+                <td id="CYBR-Bought">0</td>
+                <td id="CYBR-Percent">0</td>
+                <td id="CYBR-Total">0</td>
+            </tr>
+            <tr>
+                <td>ABB</td>
+                <td id="ABB-StockFinal">0</td>
+                <td id="ABB-Price">0</td>
+                <td id="ABB-Sold">0</td>
+                <td id="ABB-Bought">0</td>
+                <td id="ABB-Percent">0</td>
+                <td id="ABB-Total">0</td>
+            </tr>
+            <tr>
+                <td>GFN</td>
+                <td id="GFN-StockFinal">0</td>
+                <td id="GFN-Price">0</td>
+                <td id="GFN-Sold">0</td>
+                <td id="GFN-Bought">0</td>
+                <td id="GFN-Percent">0</td>
+                <td id="GFN-Total">0</td>
+            </tr>
+            <tr>
+                <td>ACAD</td>
+                <td id="ACAD-StockFinal">0</td>
+                <td id="ACAD-Price">0</td>
+                <td id="ACAD-Sold">0</td>
+                <td id="ACAD-Bought">0</td>
+                <td id="ACAD-Percent">0</td>
+                <td id="ACAD-Total">0</td>
+            </tr>
+        </table>
+        <div id="exchangeResults">
+            <div id="soldEquity">Equity Gained From Sold Stock: <span id="soldEquitySpan">0</span></div>
+            <div id="neededEquity">Equity Needed For Desired Stock: <span id="neededEquitySpan">0</span></div>
+            <div id="outOfPocketEquity">Extra Cash Needed To Achieve Target Stock Portfolio: <span id="outOfPocketEquitySpan">0</span></div>
+        </div>
+    </body>
+</html>
